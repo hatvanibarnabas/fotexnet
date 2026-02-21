@@ -36,12 +36,14 @@ export function ArtistsPageClient() {
           <div
             className="mb-6 flex flex-col gap-3 rounded-xl border border-red-200 bg-red-50 p-4 dark:border-red-800 dark:bg-red-950/30"
             role="alert"
+            data-testid="error-alert"
           >
             <p className="text-red-800 dark:text-red-200">{error}</p>
             <button
               type="button"
               onClick={() => retry()}
               className="w-fit rounded-lg border border-red-300 bg-white px-4 py-2 text-sm font-medium text-red-700 transition-colors hover:bg-red-100 dark:border-red-700 dark:bg-red-900/30 dark:text-red-200 dark:hover:bg-red-900/50"
+              data-testid="retry-button"
             >
               Próbáld újra
             </button>
